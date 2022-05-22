@@ -1,5 +1,5 @@
-.friends-screen {
-  margin: 0 var(--horizontal-space);
+.user-component {
+  justify-content: space-between;
 }
 
 .user-component,
@@ -34,4 +34,20 @@
 .user-component__avatar--sm {
   width: 60px;
   height: 60px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 400;
+}
+
+.user-component__column:nth-child(3) {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__column > span > i {
+  margin-left: 10px;
+}
+
+.user-component {
+  margin-bottom: 15px;
 }
