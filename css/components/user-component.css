@@ -21,7 +21,7 @@
 }
 
 .user-component__subtitle {
-  margin-top: 5px;
+  margin-top: 10px;
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
 }
@@ -38,9 +38,10 @@
 
 .user-component__title--not-bold {
   font-weight: 400;
+  color: black;
 }
 
-.user-component__column:nth-child(3) {
+.user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -50,4 +51,15 @@
 
 .user-component {
   margin-bottom: 15px;
+}
+
+.user-component__time {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.user-component__column--chats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

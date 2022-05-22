@@ -7,11 +7,12 @@
   padding: var(--horizontal-space);
   width: 100%;
   background-color: white;
+  margin-bottom: 15px;
 }
 
 .header__title {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .header__icons span {

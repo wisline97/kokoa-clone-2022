@@ -6,15 +6,12 @@
   z-index: -1;
   font-size: 16px;
   margin-bottom: 15px;
+  margin-top: -15px;
   font-weight: 600;
 }
 
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.2);
-}
-
-.friends-screen {
-  margin: 0 var(--horizontal-space);
 }
 
 .friends-screen__channel {
@@ -30,4 +27,16 @@
   margin-bottom: 30px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
+}
+.notification {
+  font-size: 14px;
+  background-color: tomato;
+  color: white;
+  font-weight: 600;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
 }
