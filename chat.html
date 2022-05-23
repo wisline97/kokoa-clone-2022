@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - KoKoa Clone</title>
+    <title>Chat w.Lily - KoKoa Clone</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -23,71 +23,63 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="header__title">Chats</h1>
-      <div class="header__icons">
-        <span>
-          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-        </span>
-        <span>
-          <i class="fa-regular fa-comment-dots fa-lg"></i>
-        </span>
-        <span>
-          <i class="fa-solid fa-music fa-lg"></i>
-        </span>
-        <span>
-          <i class="fa-solid fa-gear fa-lg"></i>
-        </span>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Lily</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://media.giphy.com/media/lAG6DuAa5RqxO/giphy.gif"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__txt">
-            <h4 class="user-component__title">Lily</h4>
-            <h6 class="user-component__subtitle">
-              Does somebody need a wambulance?
-            </h6>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        <span>Tuesday, June 30, 2020</span>
+      </div>
+      <div class="msg-row">
+        <div class="msg-row__profile">
+          <img src="https://media.giphy.com/media/lAG6DuAa5RqxO/giphy.gif" />
+        </div>
+        <div class="msg-row__content">
+          <span class="msg__author">Lily</span>
+          <div class="msg__info">
+            <span class="msg__bubble"> Does somebody need a wambulance? </span>
+            <span class="msg__time">21:27</span>
           </div>
         </div>
-        <div class="user-component__column--chats">
-          <span class="user-component__time">21:22</span>
-          <div class="badge">1</div>
+      </div>
+      <div class="msg-row msg-row--own">
+        <div class="msg-row__content">
+          <div class="msg__info">
+            <span class="msg__bubble"> Wah-wah, wah-wah. </span>
+            <span class="msg__time">21:27</span>
+          </div>
         </div>
       </div>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="fa-regular fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li>
-          <a class="nav__link" href="chat.html">
-            <span class="nav__notification badge">1</span>
-            <i class="fa-solid fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li>
-          <a class="nav__link" href="find.html"
-            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
-          ></a>
-        </li>
-        <li>
-          <a class="nav__link" href="More">
-            <span class="nav__notification badge"></span>
-            <i class="fa-solid fa-ellipsis fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message!" />
+        <i class="fa-regular fa-face-smile-wink fa-lg"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your Screen is too big</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/0a218c2ef9.js"

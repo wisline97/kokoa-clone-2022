@@ -18,3 +18,16 @@
 .header__icons span {
   margin-left: 25px;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+
+.header__icons .fa-gear:hover {
+  animation: rotateCog 3s linear infinite;
+}

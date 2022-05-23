@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
 
 @import "reset.css";
+@import "variables.css";
 
 /* components */
 @import "components/status-bar.css";
@@ -8,11 +9,16 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screen */
-@import "variables.css";
-@import "login.css";
-@import "friends.css";
+@import "screen/friends.css";
+@import "screen/find.css";
+@import "screen/more.css";
+@import "screen/login.css";
+@import "screen/chat.css";
 
 body {
   box-sizing: border-box;
